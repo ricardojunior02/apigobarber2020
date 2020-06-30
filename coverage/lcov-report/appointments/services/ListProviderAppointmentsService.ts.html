@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for users/services/CreateUserService.ts</title>
+    <title>Code coverage report for appointments/services/ListProviderAppointmentsService.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">users/services</a> CreateUserService.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">appointments/services</a> ListProviderAppointmentsService.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>23/23</span>
+                <span class='fraction'>20/20</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">66.67% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>2/3</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>16/16</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
@@ -105,9 +105,9 @@
 <a name='L46'></a><a href='#L46'>46</a>
 <a name='L47'></a><a href='#L47'>47</a>
 <a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -124,83 +124,89 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import User from '@modules/users/infra/typeorm/entities/User';
-import AppError from '@shared/error/AppError';
-import { inject, injectable } from 'tsyringe';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { inject, injectable } from 'tsyringe';
 &nbsp;
-import IUserRepository from '@modules/users/repositories/IUserRepository';
+import Appointments from '@modules/appointments/infra/typeorm/entities/Appointment';
+import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
 import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
-import IHashedProvider from '../providers/HashProvider/models/IHashProvider';
 &nbsp;
 interface IRequest {
-  name: string;
-&nbsp;
-  email: string;
-&nbsp;
-  password: string;
+  provider_id: string;
+  day: number;
+  month: number;
+  year: number;
 }
-@injectable()
-class CreateUserService {
-  constructor(
-    @inject('UserRepository')
-    private userRepository: IUserRepository,
 &nbsp;
-    @inject('HashProvider')
-    private hashedProvider: IHashedProvider,
-    @inject('CacheProvider') private cacheProvider: ICacheProvider
+@injectable()
+class ListProviderAppointmentsService {
+  constructor(
+    @inject('AppointementsRepository')
+    private appointmentsRepository: IAppointmentsRepository,
+&nbsp;
+    @inject('CacheProvider')
+    private cacheProvider: ICacheProvider
   ) {}
 &nbsp;
-  public async execute({ name, email, password }: IRequest): Promise&lt;User&gt; {
-    const checkEmail = await this.userRepository.findByEmail(email);
+  public async execute({
+    provider_id,
+    day,
+    month,
+    year,
+  }: IRequest): Promise&lt;Appointments[]&gt; {
+    const cacheKey = `provider-appointments:${provider_id}:${year}-${month}-${day}`;
+    let appointments = await this.cacheProvider.recover&lt;Appointments[]&gt;(
+      cacheKey
+    );
 &nbsp;
-    if (checkEmail) {
-      throw new AppError('Email ja está em uso');
+    if (<span class="missing-if-branch" title="if path not taken" >I</span>!appointments) {
+      appointments = await this.appointmentsRepository.findAllInDayProvider({
+        provider_id,
+        day,
+        month,
+        year,
+      });
+&nbsp;
+      await this.cacheProvider.save(cacheKey, appointments);
     }
 &nbsp;
-    const hashedPassword = await this.hashedProvider.generateHash(password);
-&nbsp;
-    const user = await this.userRepository.create({
-      name,
-      email,
-      password: hashedPassword,
-    });
-&nbsp;
-    await this.cacheProvider.invalidatePrefix('providers-list');
-&nbsp;
-    return user;
+    return appointments;
   }
 }
 &nbsp;
-export default CreateUserService;
+export default ListProviderAppointmentsService;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
